@@ -18,7 +18,7 @@ export class ClipComponent implements OnInit{
   
   @ViewChild('videoPlayer', { static: true }) target?: ElementRef
 
-  player?: videojs.Player
+  player?: typeof videojs.players
 
   constructor(public route: ActivatedRoute){
 
